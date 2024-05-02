@@ -7,11 +7,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Base.FrameWorkBase;
 
+
+
+//This class is created against the Web Page corresponding to Download 
 public class DownloadPage extends FrameWorkBase
 {
 	
-	
-	//for Point No.2 - In Primary Menu (on top of the website) go to Product ->Download
+	// This method is used to open Download Page
+	// and for Point No.2 - In Primary Menu (on top of the website) go to Product ->Download
 	public static boolean openDownloadPage() 
 	{
 		
@@ -36,8 +39,8 @@ public class DownloadPage extends FrameWorkBase
 	}
 	
 	
-	
-	//for Point No.3 -  Check it has 3 sections: New installation, Update, Apps.
+	// This method is used for checking the required sections on this page
+	// and for Point No.3 -  Check it has 3 sections: New installation, Update, Apps.
 	public static boolean checkDesiredSections()
 	{
 		

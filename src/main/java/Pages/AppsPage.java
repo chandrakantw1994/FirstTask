@@ -8,14 +8,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Base.FrameWorkBase;
 
+
+
+// This class is created against Web page corresponding to Apps
 public class AppsPage extends FrameWorkBase
 {
 	public static List<WebElement> v_items;
 	
 	
 	
-	
-	// for Point No.4 - Go to Apps
+	// This method is used to open Apps page.
+	// for Point No.4 - Go to Apps.
 	public static boolean openAppsPage()
 	{
 		
@@ -35,7 +38,7 @@ public class AppsPage extends FrameWorkBase
 	
 	
 	
-	
+	// This method is used for checking the required items on this page.
 	/* for
 	 * Point No.5 - Check, that following items are present on the page: IceWarp
 	 * Mobile, IceChat Mobile, Authenticator, Desktop Client, IceWarp Desktop Suite,
@@ -79,6 +82,11 @@ public class AppsPage extends FrameWorkBase
 	}
 	
 	
+	
+	
+	
+	
+	// This method i used to verify availability of Download icons/options corresponding to each items on this page
 	/* for
 	 * Point No.6 - Check, that each item has at least one download page.  In case,
 	 * some item does not, raise exception, that tells which item does not have
@@ -109,7 +117,10 @@ public class AppsPage extends FrameWorkBase
 	}
 	
 	
-	//Point No.7 - Go back to initial Page
+	
+	
+	// This method takes you back to initial Page.
+	// Point No.7 - Go back to initial Page
 	public static void goBackToInitialPage()
 	{
 			driver.findElement(By.xpath("//a[@class='main-menu-logo']")).click();

@@ -1,6 +1,7 @@
 package Base;
 
 import java.util.List;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -11,6 +12,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
+//This is FrameWorkBase class created for initializing webdriver
+//and for launching and opening desired URL
 public class FrameWorkBase 
 {
 	public static WebDriver driver;
@@ -21,6 +26,8 @@ public class FrameWorkBase
 		//.......
 	}
 	
+	
+	// This method is used to launch the browser
 	public static void launchBrowser()
 	{
 		ChromeOptions options = new ChromeOptions();
@@ -36,6 +43,9 @@ public class FrameWorkBase
 		
 	}
 	
+	
+	
+	//This method is used to open the desired URL after the browser is launched.
 	public static boolean openURL(String url)
 	{
 		//Point No.1 -  Navigate to website mentioned above ie. icewarp.co.in
