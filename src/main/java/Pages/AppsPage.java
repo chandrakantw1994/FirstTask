@@ -54,6 +54,7 @@ public class AppsPage extends FrameWorkBase
 			
 			String v_item = we1.getText();
 			if (
+					//Note that since no restriction was mentioned for items name alphabets cases (i.e. lower/upper case) i have ignored cases
 					v_item.equalsIgnoreCase("IceWarp Mobile") ||
 					v_item.equalsIgnoreCase("IceChat Mobile") ||
 					v_item.equalsIgnoreCase("Authenticator") ||
