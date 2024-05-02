@@ -50,6 +50,7 @@ public class DownloadPage extends FrameWorkBase
 		{
 			String v_section = we.getText();
 			if (
+					//Note that since no restriction was mentioned for sections name alphabets cases (i.e. lower/upper case) i have ignored cases
 					v_section.equalsIgnoreCase("New installation") ||
 					v_section.equalsIgnoreCase("Update") ||
 					v_section.equals("Apps")
